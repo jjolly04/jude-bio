@@ -44,7 +44,7 @@
         </section>
 
         <div class="logo-container">
-            <img src="images/tamu_logo.jpg" alt="" class="logo">
+            <img src="images/tamu_logo.jpg" alt="Texas A&M Logo" class="logo">
         </div>
 
         <section id="hobbies">
@@ -59,14 +59,17 @@
         <section id="contact">
             <h2>Contact Me</h2>
             <form action="mailto:jjolly04@tamu.edu" method="post" enctype="text/plain">
-                Name:<br>
-                <input type="text" name="name"><br>
-                E-mail:<br>
-                <input type="text" name="mail"><br>
-                Comment:<br>
-                <input type="text" name="comment" size="50"><br><br>
-                <input type="submit" value="Send">
-                <input type="reset" value="Reset">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="mail" required>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
             </form>
         </section>
     </main>
